@@ -1,0 +1,50 @@
+.prediosObstaculos{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+width: 30%;
+height: 100%;
+
+
+position: relative;
+animation: animacaoPredios 5s linear infinite;
+left: 100%;
+}
+
+ 
+.predioTeto, .predioChao{
+    width: 50%;
+    height: 40%;
+    background-image: url(/Assets/images/Predio.png);
+    background-size:250% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.buraco{
+    width: 100%;
+    height:20%;
+}
+
+.predioTeto{
+
+    transform: rotate(180deg);
+}
+.predioTeto{
+    height: 40%;
+}
+.predioChao{
+
+    height: 40%;
+}
+    
+@keyframes animacaoPredios {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -30%;
+    }
+}    
