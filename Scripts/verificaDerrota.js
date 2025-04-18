@@ -31,8 +31,8 @@ function verificaColisao(passaro,predio){
     ){
         gameOver = true
     }
-  
-    if(passaro.top > 700){
+
+    if(passaro.top > window.outerHeight){
             gameOver = true
     }
     
