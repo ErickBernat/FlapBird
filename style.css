@@ -1,3 +1,5 @@
+@import url(/Styles/obstaculos.css);
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +16,8 @@ body{
     background-image: url(./Assets/images/fundoJogo.jpeg);
     background-position: center;
     background-size: contain;
+
+    overflow: hidden;
     width: 70%;
     height: 100%;
 }

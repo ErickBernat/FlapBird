@@ -1,0 +1,31 @@
+.prediosObstaculos{
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+
+width: 30%;
+height: 100%;
+
+
+position: relative;
+
+left: 70%;
+}
+
+ 
+.predioTeto, .predioChao{
+    width: 50%;
+    height: 40%;
+    background-image: url(/Assets/images/Predio.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.predioTeto{
+    transform: rotate(180deg);
+}
+    
+    
