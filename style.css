@@ -1,4 +1,4 @@
-
+@import url(/Styles/passaro.css);
 @import url(/Styles/obstaculos.css);
 
 *{
@@ -11,6 +11,7 @@ body{
     height: 100vh;
     background-image: linear-gradient(rgba(15, 15, 15, 0.664) , rgba(15, 15, 15, 0.87)), url(./Assets/images/fundoJogo.jpeg);
     background-size: contain;
+    overflow: hidden;
 }
 
 .containerJogo{

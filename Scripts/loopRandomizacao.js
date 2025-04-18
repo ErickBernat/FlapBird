@@ -1,8 +1,10 @@
 import { criaPredios } from "./modificaPosicaoPredios.js";
+let tempoMudarTamanho = 5000
+
 
 export function defineTamanhoPredios(){
-   const loop = setInterval(() => {
+   const loopMudaTamanhoPredio = setInterval(() => {
     criaPredios() 
-    }, 5000);
+    }, tempoMudarTamanho);
 }
 
