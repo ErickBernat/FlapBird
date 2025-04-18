@@ -1,15 +1,13 @@
 
 
 .passaro{
-    background-color: aqua;
     position: absolute;
     width: 50px;
     height: 50px;
     background-image: url(/Assets/images/passaro.png);
     background-size: contain;
-    top: 50%;
     left: 20%;
     transform: translateY(-50%);
-    animation: animacaoPassaro 2s ease;
 }
+
 

@@ -31,7 +31,12 @@ function verificaColisao(passaro,predio){
     ){
         gameOver = true
     }
-
+  
+    if(passaro.top > 700){
+            gameOver = true
+    }
+    
 }
+
 
 
