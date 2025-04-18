@@ -13,13 +13,22 @@ body{
 }
 
 .containerJogo{
-    background-image: url(./Assets/images/fundoJogo.jpeg);
-    background-position: center;
+    background-image:linear-gradient(rgba(15, 15, 15, 0.103) , rgba(15, 15, 15, 0.267)), url(./Assets/images/fundoJogo.jpeg);
     background-size: contain;
-
+    background-repeat: repeat-x;
+    animation: animacaoFundo 5s linear infinite;
     overflow: hidden;
     width: 70%;
     height: 100%;
+}
+
+@keyframes animacaoFundo {
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: -248% 0%;
+    }
 }
 
 section{
