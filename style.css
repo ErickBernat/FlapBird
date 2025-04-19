@@ -1,6 +1,7 @@
 @import url(/Styles/passaro.css);
 @import url(/Styles/obstaculos.css);
 @import url(/Styles/modalDerrota.css);
+@import url(/Styles/telaInicial.css);
 
 *{
     margin: 0;
