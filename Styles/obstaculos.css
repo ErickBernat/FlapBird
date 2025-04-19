@@ -29,14 +29,10 @@ left: 100%;
 }
 
 .predioTeto{
-
+    height: 40%;
     transform: rotate(180deg);
 }
-.predioTeto{
-    height: 40%;
-}
 .predioChao{
-
     height: 40%;
 }
     
