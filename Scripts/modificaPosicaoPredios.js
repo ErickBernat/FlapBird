@@ -17,7 +17,7 @@ function randomizaAlturaPredios(){
    AlturaPredioTeto = Math.floor( Math.random(100)*100);
    AlturaPredioChao = Math.floor( Math.random(100)*100);
 
-   if( AlturaPredioChao > 10 && AlturaPredioTeto> 10 && AlturaPredioTeto+AlturaBuraco+AlturaPredioChao == 100){
+   if( AlturaPredioChao > 20 && AlturaPredioTeto> 20 && AlturaPredioTeto+AlturaBuraco+AlturaPredioChao == 100){
     return;
    }else{
     randomizaAlturaPredios();
