@@ -5,8 +5,8 @@ import {movimentaPassaro} from './Scripts/movimentaPassaro.js'
 iniciaJogo()
 
 function iniciaJogo(){
-    verificaDerrota()
-    defineTamanhoPredios();
-    movimentaPassaro();
+    // verificaDerrota()
+    // defineTamanhoPredios();
+    // movimentaPassaro();
 }
 

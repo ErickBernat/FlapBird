@@ -1,3 +1,5 @@
+
+
 const predioTeto = document.getElementById('predioTeto');
 const predioChao = document.getElementById('predioChao');
 const passaro = document.getElementById('passaro');
@@ -9,14 +11,12 @@ let tempoVerificaDerrota = 100;
 
 
 export function verificaDerrota(){
-    
     const loopVerificaçao = setInterval(() => {
         verificaColisao(passaro.getBoundingClientRect(), predioChao.getBoundingClientRect());
         verificaColisao(passaro.getBoundingClientRect(),predioTeto.getBoundingClientRect());
-
         if (gameOver == true) {
             clearInterval(loopVerificaçao);
-            alert('Game Over!');
+
             location.reload()
         }
     }, tempoVerificaDerrota);
