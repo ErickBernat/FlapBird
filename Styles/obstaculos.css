@@ -29,12 +29,10 @@ left: 100%;
 }
 
 .predioTeto{
-    background-color: aqua;
     height: 40%;
     transform: rotate(180deg);
 }
 .predioChao{
-    background-color: brown;
     height: 40%;
 }
     
