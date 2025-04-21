@@ -1,3 +1,4 @@
+const prediosObstaculos = document.getElementById('prediosObstaculos')
 const predioTeto = document.getElementById('predioTeto');
 const predioChao = document.getElementById('predioChao');
 const buraco = document.getElementById('buraco');
@@ -8,6 +9,7 @@ let AlturaBuraco = 20;
 
 export function criaPredios(){
     randomizaAlturaPredios();
+    prediosObstaculos.style.animation =  'animacaoPredios 5s linear infinite';
     predioChao.style.height = `${AlturaPredioChao}%`;
     predioTeto.style.height = `${AlturaPredioTeto}%`;
     buraco.style.height = `${AlturaBuraco}%`;

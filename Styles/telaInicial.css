@@ -1,0 +1,64 @@
+.telaInicial{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247) , rgba(0, 0, 0, 0.63)), url(/Assets/images/fundoInicial.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    z-index: 11;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.containerItensTelaInicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+    height: 70vh;
+
+    font-family: fontPixel;
+    .textoTelaInicial{
+
+        text-align: center;
+        h1{
+            font-size: 7vw;
+            color: white;
+            text-shadow: 10px 10px black;
+        }
+        h3{
+            width: 100%;
+            font-size:2vw;
+            text-align: end;
+            color: black;
+                text-shadow:5px 5px yellow;
+        }
+    }
+
+    .botoesTelaInicial{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 50px;
+
+        button{
+            font-family: fontPixel;
+            font-size: 2vw;
+            width: 13vw;
+            height: 8vh;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: yellow;
+        }
+    }
+
+}
