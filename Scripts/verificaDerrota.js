@@ -10,6 +10,7 @@ export function verificaDerrota(){
     const loopVerificaçao = setInterval(() => {
         verificaColisao(passaro.getBoundingClientRect(), predioChao.getBoundingClientRect());
         verificaColisao(passaro.getBoundingClientRect(),predioTeto.getBoundingClientRect());
+        
         if (gameOver == true) {
             acionaModalDerrota();
             prediosObstaculos.style.animation =  '';
