@@ -1,7 +1,8 @@
 .pontuacao{
+    width: 70%;
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: space-between;
+    align-items: center;
     color: white;
     position: absolute;
     padding: 1vw;

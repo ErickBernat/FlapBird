@@ -1,4 +1,5 @@
-const pontuacaoContador = document.getElementById('pontuacaoContador')
+const pontuacaoContador = document.getElementById('pontuacaoContador');
+const pontuacaoRecorde =  document.getElementById('pontuacaoRecorde');
 const buraco = document.getElementById('buraco');
 const passaro = document.getElementById('passaro');
 let pontos =0;
@@ -9,25 +10,15 @@ export function adicionaPonto(){
     ativaLoopPontos()
 }
 
-export function reiniciaPontuacao(){
-    pontos = 0;
-}
-
 function ativaLoopPontos(){
-   loopPontos = setInterval(() => {
-        verificaPassouBuraco();
-        adicionaPlacarPonto();
-    }, 100);
-}
+    loopPontos = setInterval(() => {
+         verificaPassouBuraco();
+         adicionaPlacarPonto();
+         comparaRecorde();
+     }, 100);
+ }
 
-function adicionaPlacarPonto(){
-    pontuacaoContador.textContent = `pontuacao: ${pontos}`
-}
-export function desativaLoopPontos(){
-    clearInterval(loopPontos)
-}
-
-function verificaPassouBuraco(){
+ function verificaPassouBuraco(){
     const passaroRect = passaro.getBoundingClientRect();
     const buracoRect = buraco.getBoundingClientRect();
 
@@ -45,3 +36,29 @@ function verificaPassouBuraco(){
     }
 
 }
+
+function adicionaPlacarPonto(){
+    pontuacaoContador.textContent = `pontuacao: ${pontos}`
+}
+
+function comparaRecorde(){
+    let recorde = localStorage.getItem('recorde');
+    if(recorde <= pontos){
+        localStorage.setItem('recorde', pontos);
+        pontuacaoRecorde.textContent = `Recorde: ${localStorage.getItem('recorde')}`
+    } 
+ }
+
+
+export function reiniciaPontuacao(){
+    pontos = 0;
+}
+ export function adicionaRecorde(){
+    localStorage.setItem('recorde',0)
+}
+
+
+export function desativaLoopPontos(){
+    clearInterval(loopPontos)
+}
+
