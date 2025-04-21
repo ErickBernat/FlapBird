@@ -7,7 +7,7 @@ let velocidade = 0;
 let posicao = 250; 
 
 export function acionaGravidadePassaro(){
-    passaro.style.top = `${posicao}px`;
+      passaro.style.top = `${posicao}px`;
       controlaGravidadePassaro();
       controlaPuloPassaro();
 }
