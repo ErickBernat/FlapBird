@@ -7,8 +7,10 @@ let AlturaPredioChao = 40;
 let AlturaBuraco = 20;
 
 
-export function criaPredios(){
+export function modificaPosicaoPredios(){
     randomizaAlturaPredios();
+    prediosObstaculos.style.display =  'flex';
+    console.log('ativouPredios')
     prediosObstaculos.style.animation =  'animacaoPredios 5s linear infinite';
     predioChao.style.height = `${AlturaPredioChao}%`;
     predioTeto.style.height = `${AlturaPredioTeto}%`;

@@ -1,7 +1,7 @@
 const passaro = document.getElementById('passaro');
-const pulo = -12;
-const gravidade = 0.7;
-const tempoDerrubaGravidadePassaro = 20;
+let pulo = -12;
+let gravidade = 0.7;
+let tempoDerrubaGravidadePassaro = 20;
 let loopGravidadePassaro;
 let velocidade = 0;
 let posicao = 250; 
@@ -18,8 +18,6 @@ export function movimentaPassaro(){
         }
       }, tempoDerrubaGravidadePassaro);
 
-      
-
       document.querySelector('body').addEventListener('click', () => {
         if(posicao < 0){
 
@@ -29,6 +27,21 @@ export function movimentaPassaro(){
         }
 
       });
+}
+
+export function reiniciaPassaro(){
+pulo = -12;
+gravidade = 0.7;
+tempoDerrubaGravidadePassaro = 20;
+velocidade = 0;
+posicao = 250; 
+passaro.style.display = 'flex'
+passaro.style.top = `${posicao}px`;
+}
+
+export function desativaPassaro(){
+  passaro.style.display = 'none'
+  clearInterval(loopGravidadePassaro);
 }
 
 
