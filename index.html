@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo Flap Bird versao Batman">
     <title>FlapBatman</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer type="module"></script>
@@ -10,6 +11,12 @@
 <body>
     <main>
         <section>
+            <div id="modalContagem" class="modalContagem">
+                    <div class="contador">
+                        <p>Missão começando</p>
+                        <h2 id="contagem"></h2>
+                    </div>
+            </div>
             <div id="modalDerrota" class="modalDerrota">
                 <div class="itensModalDerrota">
                     <div class="logoBatman">
@@ -21,26 +28,58 @@
                         <h3>Pontuacao : 10</h2>
                     </div>
                     <div class="botoesDerrota">
-                        <button>Menu</button>
+                        <button id="botaoMenu">Menu</button>
                         <button id="botaoReinicia">Reiniciar</button>
                     </div>
                 </div>
             </div>
-            <div class="telaMenu">
-                <div>
+            <div id="modalRegras" class="modalRegras">
+                <div class="itensModalRegras">
+                    <div class="botaoFecharRegras">
+                        <button  id="botaoFechaRegras">X</button>
+                    </div>
                     
+                    <h2>Regras</h2>
+                    <div class="textoModalRegras">
+                        <p>Toque na tela (ou pressione a tecla de espaço no computador) para o passaro(Batman) subir.</p>
+                        <p>O passaro(Batman) desce automaticamente devido à gravidade.</p>
+                        <p>Você ganha 1 ponto cada vez que passa com sucesso entre um par de predios.</p>
+                        <p>O jogo mostra a pontuação atual e a melhor pontuação já alcançada.</p>
+                        <p>O jogo termina se o passaro(Batman) tocar em um predio ou cair no chao.</p>
+                    </div>
+                    <div class="objetosJogoRegras">
+                        <div class="containerObjetoJogo">
+                            <img src="./Assets/images/passaro.png" alt="">
+                            <h3>Passaro</h3>
+                        </div>
+                        <div class="containerObjetoJogo">
+                            <img src="./Assets/images/Predio.png" alt="">
+                            <h3>Predios</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="containerJogo">
+            <div id="telaInicial" class="telaInicial">
+                <div class="containerItensTelaInicial">
+                    <div class="textoTelaInicial">
+                        <h1>Flappy Bird</h1>
+                        <h3>Batman Version</h3>
+                    </div>
+                    <div class="botoesTelaInicial">
+                        <button id="botaoJogar">Jogar</button>
+                        <button id="botaoRegras">Regras</button>
+                    </div>
+                </div>
+            </div>
+            <div id="containerJogo" class="containerJogo">
                 <div id="passaro" class="passaro"></div>
-                <div class="prediosObstaculos">
+                <div id="prediosObstaculos" class="prediosObstaculos">
                     <div id="predioTeto" class="predioTeto"></div>
                     <div id="buraco" class="buraco"></div>
                     <div id="predioChao" class="predioChao"></div>
                 </div>
             </div>
         </section>
-
     </main>
 </body>
 </html>

@@ -4,6 +4,7 @@
     height: 50px;
     background-image: url(/Assets/images/passaro.png);
     background-size: contain;
+    top: 300px;
     left: 20%;
     transform: translateY(-50%);
 }

@@ -1,14 +1,18 @@
-import {defineTamanhoPredios} from './Scripts/loopRandomizacao.js';
-import { verificaDerrota } from './Scripts/verificaDerrota.js';
-import {movimentaPassaro} from './Scripts/movimentaPassaro.js';
-import { reiniciaJogo } from './Scripts/reiniciaJogo.js';
+import { reiniciaJogo } from './Scripts/controlaReinicioJogo.js';
+import { desativaTelaInicial} from './Scripts/controlaTelaInicial.js';
+import { fechaModalRegras } from './Scripts/controlaModalRegras.js';
+import { abreModalRegras } from './Scripts/controlaModalRegras.js';
+import { ativaBotaoMenu } from './Scripts/controlaBotaoMenu.js';
 
-iniciaJogo()
 
-function iniciaJogo(){
-    verificaDerrota();
+
+document.addEventListener('DOMContentLoaded',()=>{
     reiniciaJogo();
-    defineTamanhoPredios();
-    movimentaPassaro();
-}
+    fechaModalRegras();
+    abreModalRegras();
+    desativaTelaInicial();
+    ativaBotaoMenu();
+})
+
+
 

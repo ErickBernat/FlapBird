@@ -1,0 +1,25 @@
+
+.modalContagem{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.61) ;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 20;
+}
+
+.contador{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: fontPixel;
+    color: white;
+    font-size: 3vw;
+    h2{
+        font-size: 17vw;
+    }
+}
