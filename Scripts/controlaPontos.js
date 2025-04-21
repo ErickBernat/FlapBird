@@ -18,6 +18,7 @@ function ativaLoopPontos(){
      }, 100);
  }
 
+
  function verificaPassouBuraco(){
     const passaroRect = passaro.getBoundingClientRect();
     const buracoRect = buraco.getBoundingClientRect();
@@ -49,6 +50,9 @@ function comparaRecorde(){
     } 
  }
 
+export function getPontuacao(){
+    return pontos
+}
 
 export function reiniciaPontuacao(){
     pontos = 0;
