@@ -1,4 +1,4 @@
-import { iniciaJogo } from "./iniciaJogo.js";
+import { iniciaJogo } from "./controlaInicioJogo.js";
 const botaoJogar = document.getElementById('botaoJogar');
 const telaInicial = document.getElementById('telaInicial');
 
@@ -9,4 +9,8 @@ export function desativaTelaInicial(){
         iniciaJogo()
     })
 
+}
+
+export function ativaTelaInicial(){
+        telaInicial.style.display = 'flex';
 }

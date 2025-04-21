@@ -1,31 +1,22 @@
-import {acionaModalDerrota} from './modalDerrota.js'
-import {desativaCriaçaoPredios} from './criaPredios.js'
-import { desativaPassaro } from './movimentaPassaro.js';
+import {acionaModalDerrota} from './controlaModalDerrota.js'
+import {desativaCriaçaoPredios} from './controlaCriacaoPredios.js'
+import { desativaPassaro } from './controlaGravidadePassaro.js';
 
 const predioTeto = document.getElementById('predioTeto');
 const predioChao = document.getElementById('predioChao');
 const passaro = document.getElementById('passaro');
-const prediosObstaculos = document.getElementById('prediosObstaculos')
+
+let loopVerificaçaoDerrota =0
 let gameOver = false;
 let tempoVerificaDerrota = 100;
 
 export function verificaDerrota(){
     gameOver = false
-    const loopVerificaçaoDerrota = setInterval(() => {
+    loopVerificaçaoDerrota = setInterval(() => {
         verificaColisao(passaro.getBoundingClientRect(), predioChao.getBoundingClientRect());
         verificaColisao(passaro.getBoundingClientRect(),predioTeto.getBoundingClientRect());
-        
-        if (gameOver == true) {
-            prediosObstaculos.style.display =  'none';
-            prediosObstaculos.style.animation =  '';
-            desativaCriaçaoPredios();
-            desativaPassaro()
-            acionaModalDerrota();
-            clearInterval(loopVerificaçaoDerrota);
-            return
-        }
+        verificaGameOver();
     }, tempoVerificaDerrota);
-
 }
 
 function verificaColisao(passaro,predio){
@@ -38,6 +29,17 @@ function verificaColisao(passaro,predio){
     }
     if(passaro.top > window.outerHeight){
             gameOver = true
+    }
+}
+
+function verificaGameOver(){
+    if (gameOver == true) {
+
+        desativaCriaçaoPredios();
+        desativaPassaro()
+        acionaModalDerrota();
+        clearInterval(loopVerificaçaoDerrota);
+        return
     }
 }
 

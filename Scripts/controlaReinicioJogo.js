@@ -1,12 +1,8 @@
-import { desativaModalDerrota } from "./modalDerrota.js";
-import { iniciaJogo } from "./iniciaJogo.js";
-import { reiniciaPassaro } from "./movimentaPassaro.js";
+import { desativaModalDerrota } from "./controlaModalDerrota.js";
+import { iniciaJogo } from "./controlaInicioJogo.js";
+import { reiniciaPassaro } from "./controlaGravidadePassaro.js";
 
-
-const tempoReinicioJogo = 3000;
 const botaoReinicia = document.getElementById('botaoReinicia');
-
-
 
 export function reiniciaJogo(){
     botaoReinicia.addEventListener('click',()=>{
