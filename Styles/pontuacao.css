@@ -1,0 +1,14 @@
+.pontuacao{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: absolute;
+    padding: 1vw;
+    z-index: 6;
+    h2{
+        font-family: fontPixel;
+        font-size: 2vw;
+    }
+}

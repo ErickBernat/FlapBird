@@ -6,6 +6,7 @@
     <meta name="description" content="Jogo Flap Bird versao Batman">
     <title>FlapBatman</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="/Assets/images/iconBatman.png" type="image/x-icon">
     <script src="./script.js" defer type="module"></script>
 </head>
 <body>
@@ -25,7 +26,7 @@
                     <div class="textoDerrota">
                         <h2>Game Over</h2>
                         <p>Sua missão termina aqui</p>
-                        <h3>Pontuacao : 10</h2>
+                        <h3 id="pontuacaoDerrota"></h2>
                     </div>
                     <div class="botoesDerrota">
                         <button id="botaoMenu">Menu</button>
@@ -41,11 +42,11 @@
                     
                     <h2>Regras</h2>
                     <div class="textoModalRegras">
-                        <p>Toque na tela (ou pressione a tecla de espaço no computador) para o passaro(Batman) subir.</p>
-                        <p>O passaro(Batman) desce automaticamente devido à gravidade.</p>
+                        <p>Clique na tela para o passaro (Batman) subir.</p>
+                        <p>O passaro (Batman) desce automaticamente devido à gravidade.</p>
                         <p>Você ganha 1 ponto cada vez que passa com sucesso entre um par de predios.</p>
-                        <p>O jogo mostra a pontuação atual e a melhor pontuação já alcançada.</p>
-                        <p>O jogo termina se o passaro(Batman) tocar em um predio ou cair no chao.</p>
+                        <p>O jogo mostra a pontuação atual e a melhor recorde já alcançado.</p>
+                        <p>O jogo termina se o passaro (Batman) tocar em um predio ou cair no chao.</p>
                     </div>
                     <div class="objetosJogoRegras">
                         <div class="containerObjetoJogo">
@@ -72,6 +73,10 @@
                 </div>
             </div>
             <div id="containerJogo" class="containerJogo">
+                <div class="pontuacao">
+                    <h2 id="pontuacaoContador" >Pontuacao: </h2>
+                    <h2 id="pontuacaoRecorde" >Recorde: </h2>
+                </div>
                 <div id="passaro" class="passaro"></div>
                 <div id="prediosObstaculos" class="prediosObstaculos">
                     <div id="predioTeto" class="predioTeto"></div>
