@@ -4,6 +4,7 @@ import {movimentaPassaro} from './Scripts/movimentaPassaro.js';
 import { reiniciaJogo } from './Scripts/reiniciaJogo.js';
 import { controlaInicioJogo } from './Scripts/iniciaJogo.js';
 import { criaPredios } from './Scripts/modificaPosicaoPredios.js';
+import { fechaModalRegras } from './Scripts/modalRegras.js';
 
 controlaInicioJogo();
 
@@ -13,6 +14,7 @@ export function iniciaJogo(){
     defineTamanhoPredios();
     criaPredios();
     movimentaPassaro();
+    fechaModalRegras();
 }
 
 
