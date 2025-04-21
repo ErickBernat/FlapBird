@@ -1,6 +1,7 @@
 import {acionaModalDerrota} from './controlaModalDerrota.js'
 import {desativaCriaçaoPredios} from './controlaCriacaoPredios.js'
 import { desativaPassaro } from './controlaGravidadePassaro.js';
+import { desativaLoopPontos } from './controlaPontos.js';
 
 const predioTeto = document.getElementById('predioTeto');
 const predioChao = document.getElementById('predioChao');
@@ -34,7 +35,7 @@ function verificaColisao(passaro,predio){
 
 function verificaGameOver(){
     if (gameOver == true) {
-
+        desativaLoopPontos();
         desativaCriaçaoPredios();
         desativaPassaro()
         acionaModalDerrota();
