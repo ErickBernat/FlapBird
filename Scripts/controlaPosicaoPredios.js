@@ -7,12 +7,9 @@ let AlturaPredioChao = 40;
 let AlturaBuraco = 20;
 
 
-export function criaPredios(){
+export function modificaPosicaoPredios(){
     randomizaAlturaPredios();
-    prediosObstaculos.style.animation =  'animacaoPredios 5s linear infinite';
-    predioChao.style.height = `${AlturaPredioChao}%`;
-    predioTeto.style.height = `${AlturaPredioTeto}%`;
-    buraco.style.height = `${AlturaBuraco}%`;
+    ativaObstaculosTela();
 }
 
 function randomizaAlturaPredios(){
@@ -24,4 +21,12 @@ function randomizaAlturaPredios(){
    }else{
     randomizaAlturaPredios();
    }
+}
+
+function ativaObstaculosTela(){
+    prediosObstaculos.style.display =  'flex';
+    prediosObstaculos.style.animation =  'animacaoPredios 5s linear infinite';
+    predioChao.style.height = `${AlturaPredioChao}%`;
+    predioTeto.style.height = `${AlturaPredioTeto}%`;
+    buraco.style.height = `${AlturaBuraco}%`;
 }

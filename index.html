@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo Flap Bird versao Batman">
     <title>FlapBatman</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer type="module"></script>
@@ -10,6 +11,12 @@
 <body>
     <main>
         <section>
+            <div id="modalContagem" class="modalContagem">
+                    <div class="contador">
+                        <p>Missão começando</p>
+                        <h2 id="contagem"></h2>
+                    </div>
+            </div>
             <div id="modalDerrota" class="modalDerrota">
                 <div class="itensModalDerrota">
                     <div class="logoBatman">
@@ -21,7 +28,7 @@
                         <h3>Pontuacao : 10</h2>
                     </div>
                     <div class="botoesDerrota">
-                        <button>Menu</button>
+                        <button id="botaoMenu">Menu</button>
                         <button id="botaoReinicia">Reiniciar</button>
                     </div>
                 </div>
@@ -64,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="containerJogo">
+            <div id="containerJogo" class="containerJogo">
                 <div id="passaro" class="passaro"></div>
                 <div id="prediosObstaculos" class="prediosObstaculos">
                     <div id="predioTeto" class="predioTeto"></div>
@@ -73,7 +80,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 </body>
 </html>
