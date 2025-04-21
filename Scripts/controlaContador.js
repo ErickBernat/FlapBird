@@ -15,8 +15,6 @@ export function loopContagem(){
         }else{
             numeroContagem--
         }
-         
-        console.log(numeroContagem)
 
     }, 600);
 

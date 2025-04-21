@@ -6,6 +6,7 @@ import { ativaBotaoMenu } from './Scripts/controlaBotaoMenu.js';
 
 
 
+
 document.addEventListener('DOMContentLoaded',()=>{
     reiniciaJogo();
     fechaModalRegras();
