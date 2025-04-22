@@ -34,6 +34,17 @@ function controlaPuloPassaro(){
         velocidade = pulo;
     }
   });
+
+  document.addEventListener('keydown', (evento)=>{
+    if(evento.code == 'Space'){
+      if(posicao < 0){
+        return
+      }
+      else{
+          velocidade = pulo;
+      }
+    }
+  })
 }
 
 export function reiniciaPassaro(){
