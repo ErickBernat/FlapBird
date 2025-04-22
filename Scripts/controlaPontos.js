@@ -18,7 +18,6 @@ function ativaLoopPontos(){
      }, 100);
  }
 
-
  function verificaPassouBuraco(){
     const passaroRect = passaro.getBoundingClientRect();
     const buracoRect = buraco.getBoundingClientRect();
@@ -59,15 +58,14 @@ export function reiniciaPontuacao(){
     pontos = 0;
 }
  export function adicionaRecorde(){
-    if(localStorage.getItem('recorde') == 0){
+    let recorde = localStorage.getItem('recorde')
+    if(recorde == 0 || recorde == 'null'){
         localStorage.setItem('recorde',pontos);
     }else{
-        let recorde = localStorage.getItem('recorde')
         localStorage.setItem("recorde",recorde)
     }
     
 }
-
 
 export function desativaLoopPontos(){
     clearInterval(loopPontos)

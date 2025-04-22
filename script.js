@@ -7,11 +7,11 @@ import { adicionaRecorde } from './Scripts/controlaPontos.js';
 
 
 document.addEventListener('DOMContentLoaded',()=>{
+    desativaTelaInicial();
     adicionaRecorde()
-    reiniciaJogo();
     fechaModalRegras();
     abreModalRegras();
-    desativaTelaInicial();
+    reiniciaJogo();
     ativaBotaoMenu();
 })
 
