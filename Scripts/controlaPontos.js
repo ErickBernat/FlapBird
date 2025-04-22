@@ -44,9 +44,10 @@ function adicionaPlacarPonto(){
 
 function comparaRecorde(){
     let recorde = localStorage.getItem('recorde');
+    pontuacaoRecorde.textContent = `Recorde: ${recorde}`
     if(recorde <= pontos){
         localStorage.setItem('recorde', pontos);
-        pontuacaoRecorde.textContent = `Recorde: ${localStorage.getItem('recorde')}`
+        pontuacaoRecorde.textContent = `Recorde: ${recorde}`
     } 
  }
 
@@ -58,7 +59,13 @@ export function reiniciaPontuacao(){
     pontos = 0;
 }
  export function adicionaRecorde(){
-    localStorage.setItem('recorde',0)
+    if(localStorage.getItem('recorde') == 0){
+        localStorage.setItem('recorde',pontos);
+    }else{
+        let recorde = localStorage.getItem('recorde')
+        localStorage.setItem("recorde",recorde)
+    }
+    
 }
 
 
