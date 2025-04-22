@@ -16,7 +16,7 @@ left: 100%;
  
 .predioTeto, .predioChao{
     width: 50%;
-    height: 40%;
+    height: 40vh;
     background-image: url(/Assets/images/Predio.png);
     background-size:250% 100%;
     background-repeat: no-repeat;
@@ -25,15 +25,15 @@ left: 100%;
 
 .buraco{
     width: 100%;
-    height:20%;
+    height:20vh;
 }
 
 .predioTeto{
-    height: 40%;
+    height: 40vh;
     transform: rotate(180deg);
 }
 .predioChao{
-    height: 40%;
+    height: 40vh;
 }
     
 @keyframes animacaoPredios {

@@ -26,7 +26,7 @@ function controlaGravidadePassaro(){
 
 
 function controlaPuloPassaro(){
-  document.querySelector('body').addEventListener('click', () => {
+  document.querySelector('#containerJogo').addEventListener('click', () => {
     if(posicao < 0){
       return
     }
