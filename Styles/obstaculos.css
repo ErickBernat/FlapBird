@@ -17,7 +17,7 @@ left: 100%;
 .predioTeto, .predioChao{
     width: 50%;
     height: 40vh;
-    background-image: url(/Assets/images/Predio.png);
+    background-image: url(/Assets/images/predio.webp);
     background-size:250% 100%;
     background-repeat: no-repeat;
     background-position: bottom;

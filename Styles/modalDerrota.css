@@ -10,7 +10,7 @@
     z-index: 10;
 }
 .itensModalDerrota{
-    background-image: url(/Assets/images/batmanCoringa.png);
+    background-image: url(/Assets/images/batmanCoringa.webp);
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
