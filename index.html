@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jogo Flap Bird versao Batman">
-    <title>FlapBatman</title>
+    <title>FlappyBatman</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="/Assets/images/iconBatman.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Assets/images/iconBatman.webp" type="image/x-icon">
+    <link rel="preload" href="/Assets/images/fundoJogo.webp" as="image" type="image/webp" />
     <script src="./script.js" defer type="module"></script>
 </head>
 <body>
@@ -21,7 +22,7 @@
             <div id="modalDerrota" class="modalDerrota">
                 <div class="itensModalDerrota">
                     <div class="logoBatman">
-                        <img src="./Assets/images/logoBatman.png" alt="">
+                        <img src="./Assets/images/logoBatman.webp" alt="" loading="lazy">
                     </div>
                     <div class="textoDerrota">
                         <h2>Game Over</h2>
@@ -42,19 +43,19 @@
                     
                     <h2>Regras</h2>
                     <div class="textoModalRegras">
-                        <p>Clique na tela para o passaro (Batman) subir.</p>
+                        <p>Clique na tela ou pressione a barra de espaço para o passaro (Batman) subir.</p>
                         <p>O passaro (Batman) desce automaticamente devido à gravidade.</p>
                         <p>Você ganha 1 ponto cada vez que passa com sucesso entre um par de predios.</p>
-                        <p>O jogo mostra a pontuação atual e a melhor recorde já alcançado.</p>
+                        <p>O jogo mostra a pontuação atual e o recorde já alcançado.</p>
                         <p>O jogo termina se o passaro (Batman) tocar em um predio ou cair no chao.</p>
                     </div>
                     <div class="objetosJogoRegras">
                         <div class="containerObjetoJogo">
-                            <img src="./Assets/images/passaro.png" alt="">
+                            <img src="./Assets/images/passaro.webp" alt="">
                             <h3>Passaro</h3>
                         </div>
                         <div class="containerObjetoJogo">
-                            <img src="./Assets/images/Predio.png" alt="">
+                            <img src="./Assets/images/predio.webp" alt="">
                             <h3>Predios</h3>
                         </div>
                     </div>
@@ -64,7 +65,7 @@
                 <div class="containerItensTelaInicial">
                     <div class="textoTelaInicial">
                         <h1>Flappy Bird</h1>
-                        <h3>Batman Version</h3>
+                        <h2>Batman Version</h2>
                     </div>
                     <div class="botoesTelaInicial">
                         <button id="botaoJogar">Jogar</button>

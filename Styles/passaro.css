@@ -1,9 +1,10 @@
 .passaro{
     position: absolute;
-    width: 50px;
-    height: 50px;
-    background-image: url(/Assets/images/passaro.png);
+    width:3vw;
+    height: 5vh;
+    background-image: url(/Assets/images/passaro.webp);
     background-size: contain;
+    background-repeat:no-repeat ;
     top: 300px;
     left: 20%;
     transform: translateY(-50%);
