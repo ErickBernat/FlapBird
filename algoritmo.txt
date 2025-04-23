@@ -1,0 +1,18 @@
+1  - Carregamento Tela inicial.
+2  - Criaçao de Botões Jogar e Regras.
+3  - Se botão Regras pressionado abre modal regras.
+4  - Fecha modal regras ao apertar no X ou na tela.
+5  - Se botão jogar pressionado.
+6  - Fecha tela inicial.
+7  - Inicia jogo e começa contador.
+8  - Terminando os 3 segundos do contador o jogo começa.
+9  - Adiciona o recorde e pontuaçao a tela.
+9  - Cria e calcula o tamanho dos predios.
+10 - Começa animaçao dos predios da direita para esquerda.
+11 - Quando a animação do predio terminar, recalcula o tamanho dos mesmos e reinicia a animação.
+12 - Passaro começa a ter gravidade.
+13 - Se pressionar espaço ou clicar no display do jogo o passar sobe um pouco.
+14 - Verifica em loop se o passaro colidiu com os predios ou com o chao(se colidiu game over). 
+15 - Verifica em loop se o passaro passou pelo buraco(Se passou ganha um ponto).
+16 - Se game over abre modal Derrota.
+17 - Ao final do jogo verifica o recorde.
