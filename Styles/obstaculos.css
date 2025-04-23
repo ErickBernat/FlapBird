@@ -29,10 +29,12 @@ left: 100%;
 }
 
 .predioTeto{
+    border-radius: 60px 60px 0px 0px;
     height: 40vh;
     transform: rotate(180deg);
 }
 .predioChao{
+    border-radius: 60px 60px 0px 0px;
     height: 40vh;
 }
     

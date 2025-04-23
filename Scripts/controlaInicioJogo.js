@@ -7,9 +7,10 @@ import { adicionaPonto, reiniciaPontuacao } from './controlaPontos.js';
 let tempoIniciaJogo = 3000;
 
 export function iniciaJogo(){
-            reiniciaPontuacao();
-            ativaModalContagem();
-     setTimeout(() => {
+       reiniciaPontuacao();
+       ativaModalContagem();
+
+       setTimeout(() => {
             adicionaPonto();
             criaPredios();
             acionaGravidadePassaro();

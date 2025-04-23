@@ -1,21 +1,23 @@
 import { desativaModalContagem } from "./controlaModalContagem.js";
 
-const contagem = document.getElementById('contagem');
+const displayContagem = document.getElementById('contagem');
 let loopContagems = 0;
+let tempoLoopContagem = 600;
 
 export function loopContagem(){
-    let numeroContagem = 3
-   loopContagems = setInterval(() => {
-        contagem.textContent = `${numeroContagem}`
+    let numeroContagem = 3;
+    
+    loopContagems = setInterval(() => {
+        displayContagem.textContent = `${numeroContagem}`
+
         if(numeroContagem < 0){
             desativaModalContagem()   
-            contagem.textContent = ``;
-            clearInterval( loopContagems)
+            displayContagem.textContent = ``;
+            clearInterval(loopContagems)
             return
         }else{
             numeroContagem--
         }
-
-    }, 600);
+    }, tempoLoopContagem);
 
 }
